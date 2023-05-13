@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Braah+One&family=Poppins:wght@700&family=Quicksand&family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+
+</head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Text at Top</title>
+    <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    .fixed-text {
+        position: fixed;
+        color:#292828;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #292828;
+        font-size: 2.0rem; 
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 10px; 
+}
+
+    .fixed-image {
+        position: fixed;
+        top:0px;
+        left:100px;
+    }
+
+    .fixed-image img {
+        max-width: 120px;
+    }
+
+    .open {
+        position:absolute;
+        top:130px;
+        left:-10px;
+    }
+
+    .open img {
+        max-width: 800px;
+    }
+
+    .open2 {
+        position:absolute;
+        top:240px;
+        left:380px;
+    }
+
+    .open2 img {
+        max-width: 250px;
+    }
+
+    .bold {
+        height:200px;
+        width:auto;
+        position:absolute;
+        top:40%;
+        left:50%;
+        margin-top:-100px;
+        margin-left:-200px;
+        font-size:3.0rem;
+        font-family:'Titillium Web', sans-serif;
+    }
+
+    .offers1 {
+        width:auto;
+        position:absolute;
+        top:400px;
+        left:10%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .actoffer1 {
+        line-height:.24;
+        top:470px;
+        width:auto;
+        position:absolute;
+        left:11%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+
+    .offers2 {
+        width:auto;
+        position:absolute;
+        top:400px;
+        left:28%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .actoffer2 {
+        width:auto;
+        position:absolute;
+        line-height:.24;
+        top:470px;
+        left:29%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .offers3 {
+        width:auto;
+        position:absolute;
+        top:400px;
+        left:46%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .actoffer3 {
+        width:auto;
+        position:absolute;
+        line-height:.24;
+        top:470px;
+        left:47%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .offers4 {
+        width:auto;
+        position:absolute;
+        top:400px;
+        left:64%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+    .actoffer4 {
+        width:auto;
+        position:absolute;
+        line-height:.24;
+        top:470px;
+        left:65%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .offers5 {
+        width:auto;
+        position:absolute;
+        top:400px;
+        left:82%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+    .actoffer5 {
+        width:auto;
+        position:absolute;
+        line-height:.24;
+        top:470px;
+        left:83%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .Info {
+        width:auto;
+        position:absolute;
+        top:700px;
+        left:10%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .text {
+        max-width:650px;
+        position:absolute;
+        top:755px;
+        left:10%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .ismage {
+        position:absolute;
+        top:755px;
+        left:48%;
+    }
+
+    .ismage img {
+        max-width:150px;
+    }
+
+    .location {
+        max-width:750px;
+        line-height:.3;
+        position:absolute;
+        top:755px;
+        left:57%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .house {
+        position:absolute;
+        top:755px;
+        left:70%;
+    }
+
+    .house img {
+        max-width:500px;
+    }
+
+    .Hours {
+        width:auto;
+        position:absolute;
+        top:1150px;
+        left:70%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .hoursinfo {
+        line-height:.5;
+        max-width:650px;
+        position:absolute;
+        top:1220px;
+        left:70%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .hoursinfo2 {
+        line-height:.5;
+        max-width:650px;
+        position:absolute;
+        top:1220px;
+        left:80%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .Book {
+        width:auto;
+        position:absolute;
+        top:1150px;
+        left:10%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .bookinfo {
+        line-height:.5;
+        max-width:650px;
+        position:absolute;
+        top:1220px;
+        left:10%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .Work {
+        width:auto;
+        position:absolute;
+        top:1350px;
+        left:10%;
+        font-size:2.0rem;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .workinfo {
+        line-height:.5;
+        max-width:650px;
+        position:absolute;
+        top:1420px;
+        left:10%;
+        font-size:1.2rem;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .check1 {
+        position:absolute;
+        top:483px;
+        left:10%;
+    }
+
+    .check1 img {
+        max-width:15px;
+        margin-bottom:5px;
+    }
+    .check2 {
+        position:absolute;
+        top:483px;
+        left:28%;
+    }
+
+    .check2 img {
+        max-width:15px;
+        margin-bottom:5px;
+    }
+    .check3 {
+        position:absolute;
+        top:483px;
+        left:46%;
+    }
+
+    .check3 img {
+        max-width:15px;
+        margin-bottom:5px;
+    }
+    .check4 {
+        position:absolute;
+        top:483px;
+        left:64%;
+    }
+
+    .check4 img {
+        max-width:15px;
+        margin-bottom:5px;
+    }
+
+    .check5 {
+        position:absolute;
+        top:483px;
+        left:82%;
+    }
+
+    .check5 img {
+        max-width:15px;
+        margin-bottom:5px;
+    }
+
+    .bookbutton {
+        position:absolute;
+        top:1250px;
+        left:8%;
+    }
+
+    .bookbutton img {
+        max-width: 350px;
+    }
+
+    .applybutton {
+        position:absolute;
+        top:1440px;
+        left:5%;
+    }
+
+    .applybutton img {
+        max-width: 350px;
+    }
+
+    .bottom {
+        position:absolute;
+        top:1580px;
+        left:0
+    }
+
+    .bottom img {
+        width:1900px;
+        height:150px;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="fixed-text">
+        <p>
+           h
+        </p>
+    </div>
+    <div class="fixed-image">
+        <img src="file:///C:/Users/sophi/Downloads/MY%20SALON-1%20(4).png">
+    </div>
+
+    <div class="open">
+        <img src="file:///C:/Users/sophi/Downloads/MY%20SALON-1%20(2).png">
+    </div>
+
+    <div class="open2">
+        <img src="file:///C:/Users/sophi/Downloads/MY%20SALON-1%20(5).png">
+    </div>
+    <div class="bold">
+        <p>
+                What we offer:
+        </p>
+    </div> 
+    <div class="offers1">
+        <p>
+            Hair services
+        </p>
+    </div>
+    <div class="actoffer1">
+        <p>
+            Haircuts/hair styling
+        </p>
+        <p>
+            Full color/highlights
+        </p>
+        <p>
+            Hair extensions
+        </p>
+        <p>
+            Perms/relaxers
+        </p>
+        <p>
+            Hair treatment 
+        </p>
+        <p>
+            Blowouts/styling
+        </p>
+    </div>
+
+        <div class="offers5">
+        <p>
+            Skincare
+        </p>
+    </div>
+        <div class="actoffer5">
+            <p>
+                Facials
+            </p>
+            <p>
+                Skin massage
+            </p>
+        </div>
+
+        <div class="offers3">
+        <p>
+            Nails
+        </p>
+    </div>
+    <div class="actoffer3">
+        <p>
+            Manicures
+        </p>
+        <p>
+            Pedicures
+        </p>
+        <p>
+            Nail extensions (Gel or acrylic)
+        </p>
+        <p>
+            Nail art/design
+        </p>
+        <p>
+            Wax treatments
+        </p>
+    </div>
+
+        <div class="offers4">
+        <p>
+            Makeup
+        </p>
+    </div>
+    <div class="actoffer4">
+        <p>
+            Bridal makeup
+        </p>
+        <p>
+            Other special occasions
+        </p>
+        <p>
+            Airbrush makeup
+        </p>
+        <p>
+            False eyelash application
+        </p>
+    </div>
+
+        <div class="offers2">
+        <p>
+            Waxing
+        </p>
+    </div>
+    <div class="actoffer2">
+        <p>
+            Eyebrow shaping/waxing
+        </p>
+        <p>
+            Facial hair removal
+        </p>
+        <p>
+            Body waxing (legs,arms,etc)
+        </p>
+        <p>
+            Threading
+        </p>
+    </div>
+    
+    <div class="Info">
+        <p>
+            About us
+        </p>
+    </div>
+    
+<div class="text">
+    <p>
+        About salon
+    </p>
+</div>
+
+<div class="ismage">
+    <img src="https://cdn-icons-png.flaticon.com/512/1865/1865269.png">
+</div>
+
+<div class="location">
+    <p>
+        XXXXX ________ Blvd
+    </p>
+    <p>
+        Cleveland, Ohio 44110
+    </p>
+<br>
+
+<p>
+    ourgmail@gmail.com
+</p>
+<p>
+    (440) XXX-XXXX
+</p>
+</div>
+<div class="house">
+    <img src="https://media.istockphoto.com/id/173557068/photo/consultant-office-building.jpg?b=1&s=170667a&w=0&k=20&c=8C19C7q1wXd6uW-DYPBh9uKhlNqinGESCx5gqyr_798=">
+</div>
+<div class="Hours">
+    <p>
+        Our hours
+    </p>
+</div>
+
+<div class="hoursinfo">
+    <p>
+        Sunday
+    </p>
+    <p>
+        Monday
+    </p>
+    <p>
+        Tuesday
+    </p>
+    <p>
+        Wednesday
+    </p>
+    <p>
+        Thursday
+    </p>
+    <p>
+        Friday
+    </p>
+    <p>
+        Saturday
+    </p>
+</div>
+<div class="hoursinfo2">
+    <p>
+        9:00 am - 8:00 pm
+    </p>
+    <p>
+        10:00 am - 6:00 pm
+    </p>
+    <p>
+        10:00 am - 7:00 pm
+    </p>
+    <p>
+        10:00 am - 7:00 pm
+    </p>
+    <p>
+        10:00 am - 7:00 pm
+    </p>
+    <p>
+        12:00 pm - 9:00 pm
+    </p>
+    <p>
+        9:00 am - 8:00 pm
+    </p>
+</div>
+
+<div class="Book">
+    <p>
+        Want to book an appointment?
+    </p>
+</div>
+<div class="bookinfo">
+    <p> 
+        Online booking is now available! Click below to schedule an appointment.
+    </p>
+</div>
+
+<div class="Work">
+    <p>
+        Interested in working here?
+    </p>
+</div>
+<div class="workinfo">
+    <p> 
+        We are currently hiring! Click below to apply or for more information.
+    </p>
+</div>
+<div class="check1">
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+</div>
+
+<div class="check2">
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+</div>
+
+<div class="check3">
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+    <br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+    <br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+</div>
+
+<div class="check4">
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+</div>
+
+<div class="check5">
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+<br>
+    <img src="https://www.svgrepo.com/show/169312/check-mark.svg">
+</div>
+<div class="applybutton">
+    <img src="file:///C:/Users/sophi/Downloads/MY%20SALON-1%20(6).png">
+</div>
+<div class="bookbutton">
+    <img src="file:///C:/Users/sophi/Downloads/MY%20SALON-1%20(5).png">
+</div>
+<div class="bottom">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAPFBMVEXT09PZ2dlvb29kZGRYWFhNTU1DQ0M4ODhCQkJLS0siIiLg4OB0dHQGBgYlJSUoKCgtLS1fX19UVFQ8PDxP1g+TAAABX0lEQVR4nO3dOVLDAAAEQcm3LHHY/P+vKCChCKDIRur+weRbtcPL69v79Xq9XW7TeXX68jh+c/i/468epz94nv9guvxwH6Z53LJ5Gc7jsGXjYQeFz80XnhS2KexT2KewT2Gfwr618LH5wqPCNoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2KewT2HfLgoPCtsU9insU9insE9hn8I+hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPYt4vFkMI4hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9u3iZ0ZhnMI+hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CvrXwrLBNYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2KewT2HfWjhtvvCisE1hn8I+hX0K+xT2KexT2LePwnncsnkZ7sthy5aPT3rrDlIBlNiKAAAAAElFTkSuQmCC">
+</div>
+
+</body>
+</html>
